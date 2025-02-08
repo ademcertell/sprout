@@ -19,7 +19,7 @@ export function Tree({ completedPomodoros }: { completedPomodoros: number }) {
       </CardHeader>
       <CardContent className="flex flex-col items-center justify-center space-y-4">
         <div className="text-6xl">{currentStage}</div>
-        <p className="text-sm text-[#a1a1aa]">Complete more Pomodoros to grow your tree!</p>
+        <p className="text-sm text-[#4ADE80]">Every great achievement begins with small steps!</p>
       </CardContent>
     </Card>
   )

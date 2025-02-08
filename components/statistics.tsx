@@ -43,8 +43,8 @@ export function Statistics({ completed, remaining }: { completed: number; remain
             <span className="text-sm text-[#e4e4e7]">Completed</span>
           </div>
           <div className="flex items-center space-x-2">
-            <span className="h-4 w-4 rounded-full" style={{ backgroundColor: "#22C55E" }}></span>
-            <span className="text-sm text-[#e4e4e7]">Remaining</span>
+            <span className="h-4 w-4 rounded-full" style={{ backgroundColor: "#3f3f46" }}></span>
+            <span className="text-sm text-[#94a3b8]">Remaining</span>
           </div>
         </div>
       </CardContent>
