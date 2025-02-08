@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./public/logo.jpg" width='128' height='128' />
+<img src="./public/logo.png" width='128' height='128' />
 </p>
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).

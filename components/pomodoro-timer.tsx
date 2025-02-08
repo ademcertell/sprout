@@ -47,11 +47,11 @@ export function PomodoroTimer({
 
   if (focusMode) {
     return (
-      <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
+      <div className="fixed inset-0 bg-[#0F172A] flex items-center justify-center z-50">
         <div className="text-center">
-          <h1 className="text-white text-4xl mb-4">Focus Mode</h1>
-          <div className="text-white text-6xl font-bold mb-6">{formatTime(timeLeft)}</div>
-          <Button onClick={() => onFocusModeChange(false)} className="bg-[#f35021] hover:bg-[#f35021]/90">
+          <h1 className="text-[#e4e4e7] text-4xl mb-4">Focus Mode</h1>
+          <div className="text-[#e4e4e7] text-6xl font-bold mb-6">{formatTime(timeLeft)}</div>
+          <Button onClick={() => onFocusModeChange(false)} className="bg-[#4ADE80] hover:bg-[#22C55E] text-[#0F172A]">
             Exit Focus Mode
           </Button>
         </div>
@@ -60,14 +60,19 @@ export function PomodoroTimer({
   }
 
   return (
-    <Card className="bg-background/5 backdrop-blur">
+    <Card className="bg-[#0F172A]/80 border-[#4ADE80]/20">
       <CardHeader>
         <CardTitle>Pomodoro Timer</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col items-center gap-4">
         <div className="text-6xl font-bold tabular-nums">{formatTime(timeLeft)}</div>
         <div className="flex gap-2">
-          <Button variant="outline" size="icon" onClick={() => setIsRunning(!isRunning)} className="h-12 w-12">
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => setIsRunning(!isRunning)}
+            className="h-12 w-12 bg-[#4ADE80] hover:bg-[#22C55E] text-[#0F172A] border-[#4ADE80]/20"
+          >
             {isRunning ? <Pause className="h-6 w-6" /> : <Play className="h-6 w-6" />}
           </Button>
           <Button
@@ -77,7 +82,7 @@ export function PomodoroTimer({
               setIsRunning(false)
               setTimeLeft(workDuration * 60)
             }}
-            className="h-12 w-12"
+            className="h-12 w-12 bg-[#4ADE80] hover:bg-[#22C55E] text-[#0F172A] border-[#4ADE80]/20"
           >
             <RotateCcw className="h-6 w-6" />
           </Button>
@@ -86,4 +91,3 @@ export function PomodoroTimer({
     </Card>
   )
 }
-

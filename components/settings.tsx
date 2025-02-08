@@ -1,22 +1,21 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
-import { Label } from "@/components/ui/label";
-import { Maximize2 } from "lucide-react";
+"use client"
 
-export function Settings({
-  workDuration,
-  breakDuration,
-  longBreakInterval,
-  onSettingsChange,
-  onEnterFocusMode,
-}: {
-  workDuration: number;
-  breakDuration: number;
-  longBreakInterval: number;
-  onSettingsChange: (settings: { workDuration: number; breakDuration: number; longBreakInterval: number }) => void;
-  onEnterFocusMode: () => void;
-}) {
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Slider } from "@/components/ui/slider"
+import { Label } from "@/components/ui/label"
+import { useState } from "react"
+import { Maximize2 } from "lucide-react"
+
+export function Settings() {
+  const [workDuration, setWorkDuration] = useState(15)
+  const [breakDuration, setBreakDuration] = useState(5)
+  const [longBreakInterval, setLongBreakInterval] = useState(4)
+
+  const enterFocusMode = () => {
+    // Implementation for focus mode
+  }
+
   return (
     <Card className="bg-background/5 backdrop-blur">
       <CardHeader>
@@ -28,7 +27,7 @@ export function Settings({
           <div className="flex items-center gap-2">
             <Slider
               value={[workDuration]}
-              onValueChange={(value) => onSettingsChange({ workDuration: value[0], breakDuration, longBreakInterval })}
+              onValueChange={(value) => setWorkDuration(value[0])}
               max={60}
               min={1}
               step={1}
@@ -41,7 +40,7 @@ export function Settings({
           <div className="flex items-center gap-2">
             <Slider
               value={[breakDuration]}
-              onValueChange={(value) => onSettingsChange({ workDuration, breakDuration: value[0], longBreakInterval })}
+              onValueChange={(value) => setBreakDuration(value[0])}
               max={30}
               min={1}
               step={1}
@@ -54,19 +53,19 @@ export function Settings({
           <div className="flex items-center gap-2">
             <Slider
               value={[longBreakInterval]}
-              onValueChange={(value) => onSettingsChange({ workDuration, breakDuration, longBreakInterval: value[0] })}
-              max={10}
+              onValueChange={(value) => setLongBreakInterval(value[0])}
+              max={8}
               min={2}
               step={1}
             />
             <span className="w-12 text-sm">{longBreakInterval}</span>
           </div>
         </div>
-        <Button className="w-full bg-[#f35021] hover:bg-[#f35021]/90" onClick={onEnterFocusMode}>
+        <Button className="w-full bg-[#4ADE80] hover:bg-[#22C55E] text-[#0F172A]" onClick={enterFocusMode}>
           <Maximize2 className="mr-2 h-4 w-4" />
           Enter Focus Mode
         </Button>
       </CardContent>
     </Card>
-  );
+  )
 }
