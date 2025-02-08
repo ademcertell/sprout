@@ -21,9 +21,10 @@ Minimalist & Elegant UI → A modern and distraction-free design.
 - `public/` - Contains static files such as images, icons, and fonts that are directly accessible in the project.
 - `lib/` - Contains utility functions, custom hooks, and libraries that are used across the project to manage state, formatting, and logic.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+### Getting Started
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 First, run the development server:
 
