@@ -22,7 +22,7 @@ Sprout combines the Pomodoro Technique with an intuitive growth visualization sy
 - `lib/` - Contains utility functions, custom hooks, and libraries that are used across the project to manage state, formatting, and logic.
 
 
-### Getting Started
+### 🚀 Getting Started
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
