@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Sprout",
   description: "A productivity tool that grows with you. Sprout is a minimalistic and engaging Pomodoro app that visualizes your progress by growing a tree as you work. Stay focused, stay motivated",
   icons: {
-    icon: "logo.png",
-    apple: "logo.png",
+    icon: "logo.jpg",
+    apple: "logo.jpg",
   },
 };
 
