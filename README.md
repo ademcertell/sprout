@@ -6,10 +6,10 @@ Sprout is an innovative Pomodoro timer designed to boost productivity with focus
 ### 🌿 What is Sprout?
 Sprout combines the Pomodoro Technique with an intuitive growth visualization system, where your progress is represented by a growing tree.
 
-Boost Focus & Productivity → Work in structured intervals for better efficiency.
-Track Your Sessions → Get insights into your completed Pomodoro cycles.
-Visual Growth System → Watch a tree grow as you complete work sessions.
-Minimalist & Elegant UI → A modern and distraction-free design.
+⏳ Boost Focus & Productivity → Work in structured intervals for better efficiency.
+📊 Track Your Sessions → Get insights into your completed Pomodoro cycles.
+🌱 Visual Growth System → Watch a tree grow as you complete work sessions.
+🎨 Minimalist & Elegant UI → A modern and distraction-free design.
 
 ### Tech Stack
 - **Framework**: [Next.js](https://nextjs.org/)
