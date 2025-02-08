@@ -17,12 +17,9 @@ Minimalist & Elegant UI → A modern and distraction-free design.
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/)
 
 ## Overview
- sprout
- ┣ app
- ┃ ┣ globals.css            # Global CSS settings
- ┣ components # Contains all project components with reusable React components, ensuring modularity and maintainability.
- ┣ public # Contains static files such as images, icons, and fonts that are directly accessible in the project.
- ┣ lib # Contains utility functions, custom hooks, and libraries that are used across the project to manage state, formatting, and logic.
+- `components/` - Contains all project components with reusable React components, ensuring modularity and maintainability.
+- `public/` - Contains static files such as images, icons, and fonts that are directly accessible in the project.
+- `lib/` - Contains utility functions, custom hooks, and libraries that are used across the project to manage state, formatting, and logic.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
